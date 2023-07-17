@@ -1,1 +1,1 @@
-# flask-postures-api
+# flask-postgres-api
