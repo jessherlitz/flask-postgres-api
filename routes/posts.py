@@ -15,7 +15,7 @@ CREATE_POST = """INSERT INTO posts (
 
 
 @posts.route("/posts", methods=["POST"])
-def create_posts():
+def create_post():
     data = request.get_json()
     parent_post_id = data["parentPostId"]
     post_text = data["postText"]
