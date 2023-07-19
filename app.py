@@ -1,11 +1,13 @@
 from flask import Flask
 from routes.users import *
 from routes.posts import *
+from routes.follows import *
 
 app = Flask(__name__)
 
 app.register_blueprint(users)
 app.register_blueprint(posts)
+app.register_blueprint(follows)
 
 
 @app.route('/')
